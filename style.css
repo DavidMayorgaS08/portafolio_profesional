@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+.cont {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.cont_info, .cont_trabajos {
+    background-color: #FAF9F6;
+    box-shadow: 0 0 40px #bfcdc4;
+    border-radius: 20px;
+}
+
+.cont_info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-right: 2%;
+}
+
+.cont_nombre {
+    height: 35vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.text_nombre {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cont_descr {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.text_descr {
+    font-size: 18px;
+    text-align: center;
+}
+
+.cont_correo {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text_correo {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.correo {
+    font-size: 17px;
+    color: #27496D;
+}
+
+.cont_redes {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.github, .linkedin, .twitter {
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.github:hover {
+    transform: scale(1.1);
+}
+
+.linkedin:hover {
+    transform: scale(1.1);
+}
+
+.twitter:hover {
+    transform: scale(1.1);
+}
+
+.cont_trabajos {
+    width: 50%;
+    margin-left: 2%;
+    position: relative;
+}
+
+.cont_agro {
+    position: absolute;
+    width: 45%;
+    top: 65px;
+    left: 3%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cont_text_agro {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.cont_agro:hover {
+    transform: scale(1.1);
+}
+
+.cont_gym {
+    position: absolute;
+    width: 45%;
+    top: 65px;
+    right: 3%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cont_text_gym {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.cont_gym:hover {
+    transform: scale(1.1);
+}
+
+.cont_svi {
+    position: absolute;
+    width: 45%;
+    bottom: 65px;
+    left: 3%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cont_text_svi {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.cont_svi:hover {
+    transform: scale(1.1);
+
+}
+
+.cont_feria {
+    position: absolute;
+    width: 45%;
+    bottom: 65px;
+    right: 3%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cont_text_feria {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.cont_feria:hover {
+    transform: scale(1.1);
+}
+
+.img {
+    width: 100%;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.img:hover {
+    filter: brightness(0.7);
+}
+
+@media(max-width: 1000px) {
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont_info {
+        width: 80%;
+        margin: 0;
+    }
+
+    .cont_trabajos {
+        width: 80%;
+        height: 500px;
+        margin: 0;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 490px) {
+    .cont_nombre {
+        padding-bottom: 90px;
+    }
+
+    .cont_correo {
+        bottom: 100px;
+    }
+
+    .cont_trabajos {
+        height: 940px;
+    }
+
+    .cont_agro {
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .cont_gym {
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .cont_svi {
+        bottom: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .cont_feria {
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+}
+
+@media(max-width: 400px) {
+    .cont_info, .cont_trabajos {
+        width: 90%;
+    }
+}
